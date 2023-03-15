@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a= 0;
+  let b= 1;
+  let c= parseInt(prompt("Nhập số trong dãy fibonacci" ))
+  for ( i = 0; i<c ; i++ ){
+      number = a + b
+      document.write( number + "<br>");
+      a = b;
+    b = number;
+    if (number%5===0){
+        document.write(number)
+        break;
+    }
+  }
+</script>
+</body>
+</html>

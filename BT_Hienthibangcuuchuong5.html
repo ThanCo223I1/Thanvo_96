@@ -2,16 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script>
-        for (var  i=1; i<=9;i++){
-            for(var j =1; j<=10; j++){
-                var product = i*j;
-                document.write(i + "*" + j + "=" + product +"<br>");
-            }
-        }
-    </script>
+    <title>Bảng Cửu Chươn</title>
 </head>
 <body>
+<script>
+   let BCC
+     BCC = "<table border='6'>"
+    for (let i = 1; i <= 10; i++) {
+        BCC += "<tr>"
+        for (let j = 2; j <= 10; j++) {
+            BCC += "<td align='center'>"
+            BCC += j + " x " + i + " = " + ( i * j )
+            BCC += "</td>"
+        }
+        BCC += "</tr>"
+    }
+    BCC += "</table>"
+    document.write(BCC);
+</script>
 </body>
 </html>
